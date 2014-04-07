@@ -1,6 +1,6 @@
 {
     "name": "hello-world-element",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Web Component example using VanillaJS",
     "author": "WebComponents.org",
     "license": "MIT",
