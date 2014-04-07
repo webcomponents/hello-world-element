@@ -1,0 +1,21 @@
+{
+    "name": "hello-world-element",
+    "version": "0.0.0",
+    "description": "Web Component example using VanillaJS.",
+    "authors": [
+        "WebComponents.org"
+    ],
+    "license": "MIT",
+    "main": "src/hello-world.html",
+    "keywords": [
+        "web-components"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "platform": "Polymer/platform#~0.2.0"
+    }
+}
