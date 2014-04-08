@@ -32,10 +32,8 @@
             this.strong = shadowRoot.querySelector('strong');
 
             // Checks if the name attribute has been overwritten
-            var myElement = thatDoc.querySelector('hello-world');
-
-            if (myElement.hasAttribute('name')) {
-                var name = myElement.getAttribute('name');
+            if (this.hasAttribute('name')) {
+                var name = this.getAttribute('name');
                 this.setName(name);
             }
             else {
