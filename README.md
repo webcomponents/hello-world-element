@@ -6,27 +6,31 @@
 
 [Check it live!](http://webcomponents.github.io/hello-world-element)
 
+## Install
+
+Install the component using [Bower](http://bower.io/):
+
+```sh
+$ bower install hello-world-element --save
+```
+
+Or [download as ZIP](https://github.com/webcomponents/hello-world-element/archive/gh-pages.zip).
+
 ## Usage
 
-1. Install the component using [Bower](http://bower.io/):
-
-    ```sh
-    $ bower install hello-world-element --save
-    ```
-
-2. Import Web Components' polyfill:
+1. Import Web Components' polyfill:
 
     ```html
     <script src="bower_components/platform/platform.js"></script>
     ```
 
-3. Import Custom Element:
+2. Import Custom Element:
 
     ```html
     <link rel="import" href="bower_components/hello-world-element/src/hello-world.html">
     ```
 
-4. Start using it!
+3. Start using it!
 
     ```html
     <hello-world></hello-world>
