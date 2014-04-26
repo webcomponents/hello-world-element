@@ -1,4 +1,4 @@
-# &lt;hello-world&gt; ![Bower Version](https://badge.fury.io/bo/hello-world-element.svg)
+# &lt;hello-world&gt;
 
 > Web Component example using [VanillaJS](http://vanilla-js.com/).
 
