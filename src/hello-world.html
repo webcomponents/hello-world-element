@@ -32,10 +32,8 @@
             this.strong = shadowRoot.querySelector('strong');
 
             // Checks if the "who" attribute has been overwritten
-            var myElement = thatDoc.querySelector('hello-world');
-
-            if (myElement.hasAttribute('who')) {
-                var who = myElement.getAttribute('who');
+            if (this.hasAttribute('who')) {
+                var who = this.getAttribute('who');
                 this.setWho(who);
             }
             else {
