@@ -1,6 +1,8 @@
 # &lt;hello-world&gt;
 
-> Web Component example using [VanillaJS](http://vanilla-js.com/).
+> A Web Component example using [VanillaJS](http://vanilla-js.com/).
+>
+> Looking for a boilerplate? Check [element-boilerplate](https://github.com/webcomponents/element-boilerplate).
 
 ## Demo
 
@@ -27,7 +29,7 @@ Or [download as ZIP](https://github.com/webcomponents/hello-world-element/archiv
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/hello-world-element/src/hello-world.html">
+    <link rel="import" href="bower_components/hello-world-element/dist/hello-world.html">
     ```
 
 3. Start using it!
