@@ -16,8 +16,8 @@
         // Creates an object based in the HTML Element prototype
         var MyElementProto = Object.create(HTMLElement.prototype);
 
-        // Creates the "name" attribute and sets a default value
-        MyElementProto.name = 'World';
+        // Creates the "who" attribute and sets a default value
+        MyElementProto.who = 'World';
 
         // Fires when an instance of the element is created
         MyElementProto.createdCallback = function() {
@@ -31,31 +31,31 @@
             // Caches <strong> DOM query
             this.strong = shadowRoot.querySelector('strong');
 
-            // Checks if the name attribute has been overwritten
+            // Checks if the "who" attribute has been overwritten
             var myElement = thatDoc.querySelector('hello-world');
 
-            if (myElement.hasAttribute('name')) {
-                var name = myElement.getAttribute('name');
-                this.setName(name);
+            if (myElement.hasAttribute('who')) {
+                var who = myElement.getAttribute('who');
+                this.setWho(who);
             }
             else {
-                this.setName(this.name);
+                this.setWho(this.who);
             }
         };
 
         // Fires when an attribute was added, removed, or updated
         MyElementProto.attributeChangedCallback = function(attr, oldVal, newVal) {
-            if (attr === 'name') {
-                this.setName(newVal);
+            if (attr === 'who') {
+                this.setWho(newVal);
             }
         };
 
-        // Sets new value to name attribute
-        MyElementProto.setName = function(val) {
-            this.name = val;
+        // Sets new value to "who" attribute
+        MyElementProto.setWho = function(val) {
+            this.who = val;
 
-            // Sets name value into <strong>
-            this.strong.textContent = this.name;
+            // Sets "who" value into <strong>
+            this.strong.textContent = this.who;
         }
 
         // Registers <hello-world> in the main document

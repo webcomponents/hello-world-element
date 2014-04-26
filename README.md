@@ -40,7 +40,7 @@ Or [download as ZIP](https://github.com/webcomponents/hello-world-element/archiv
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`name`     | *string*                  | `World`             | Who do you want to say hello?
+`who`      | *string*                  | `World`             | Who do you want to say hello?
 
 ## Development
 
