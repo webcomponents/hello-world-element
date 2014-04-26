@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
-        connect: {
+        'connect': {
             demo: {
                 options: {
                     open: true,
@@ -9,24 +9,22 @@ module.exports = function(grunt) {
                 }
             }
         },
-        bump: {
+        'gh-pages': {
             options: {
-                commit: true,
-                commitFiles: ['bower.json', 'package.json'],
-                commitMessage: 'Release v%VERSION%',
-                createTag: true,
-                files: ['bower.json', 'package.json'],
-                push: true,
-                pushTo: 'origin gh-pages',
-                tagMessage: '',
-                tagName: 'v%VERSION%'
-            }
+                clone: 'bower_components/hello-world-element'
+            },
+            src: [
+                'bower_components/**/*',
+                '!bower_components/hello-world-element/**/*',
+                'src/*', 'index.html'
+            ]
         }
     });
 
-    grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-gh-pages');
 
-    grunt.registerTask('default', ['connect']);
+    grunt.registerTask('deploy', ['gh-pages']);
+    grunt.registerTask('server', ['connect']);
 
 };
