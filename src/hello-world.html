@@ -8,7 +8,7 @@
         var thatDoc = document;
 
         // Refers to the "importee", which is src/hello-world.html
-        var thisDoc = document._currentScript.ownerDocument;
+        var thisDoc = document.(_currentScript || currentScript).ownerDocument;
 
         // Gets content from <template>
         var template = thisDoc.querySelector('template').content;
