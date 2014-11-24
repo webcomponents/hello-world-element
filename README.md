@@ -23,7 +23,7 @@ Or [download as ZIP](https://github.com/webcomponents/hello-world-element/archiv
 1. Import Web Components' polyfill:
 
     ```html
-    <script src="bower_components/platform/platform.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
     ```
 
 2. Import Custom Element:
