@@ -8,7 +8,7 @@
         var thatDoc = document;
 
         // Refers to the "importee", which is src/hello-world.html
-        var thisDoc = document._currentScript.ownerDocument;
+        var thisDoc =  (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
 
         // Gets content from <template>
         var template = thisDoc.querySelector('template').content;
@@ -54,7 +54,7 @@
 
             // Sets "who" value into <strong>
             this.strong.textContent = this.who;
-        }
+        };
 
         // Registers <hello-world> in the main document
         window.MyElement = thatDoc.registerElement('hello-world', {
