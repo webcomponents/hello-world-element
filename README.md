@@ -29,7 +29,7 @@ Or [download as ZIP](https://github.com/webcomponents/hello-world-element/archiv
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/hello-world-element/dist/hello-world.html">
+    <link rel="import" href="bower_components/hello-world-element/src/hello-world.html">
     ```
 
 3. Start using it!
