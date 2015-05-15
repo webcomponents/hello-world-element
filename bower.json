@@ -16,6 +16,6 @@
         "bower_components"
     ],
     "dependencies": {
-        "webcomponentsjs": "^0.5.1"
+        "webcomponentsjs": "^0.7.0"
     }
 }
