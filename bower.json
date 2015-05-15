@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "name": "hello-world-element",
+    "dependencies": {
+        "hello-world-element": "webcomponents/hello-world-element#master"
+    }
+}
