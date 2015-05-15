@@ -6,13 +6,12 @@
         "WebComponents.org"
     ],
     "license": "MIT",
-    "main": "src/hello-world.html",
+    "main": "hello-world.html",
     "keywords": [
         "web-components"
     ],
     "ignore": [
         "**/.*",
-        "node_modules",
         "bower_components"
     ],
     "dependencies": {

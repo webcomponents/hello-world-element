@@ -29,7 +29,7 @@ Or [download as ZIP](https://github.com/webcomponents/hello-world-element/archiv
 2. Import custom element:
 
     ```html
-    <link rel="import" href="bower_components/hello-world-element/src/hello-world.html">
+    <link rel="import" href="bower_components/hello-world-element/hello-world.html">
     ```
 
 3. Start using it!
@@ -48,28 +48,22 @@ Attribute  | Options                   | Default             | Description
 
 In order to run it locally you'll need to fetch some dependencies and a basic server setup.
 
-1. Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
+1. Install [bower](http://bower.io/) & [polyserve](https://npmjs.com/polyserve):
 
     ```sh
-    $ [sudo] npm install -g bower grunt-cli
+    $ npm install -g bower polyserve
     ```
 
 2. Install local dependencies:
 
     ```sh
-    $ bower install && npm install
+    $ bower install
     ```
 
-3. To test your project, start the development server and open `http://localhost:8000`.
+3. Start development server and open `http://localhost:8080/components/hello-world-element/`.
 
     ```sh
-    $ grunt server
-    ```
-
-4. To provide a live demo, send everything to `gh-pages` branch.
-
-    ```sh
-    $ grunt deploy
+    $ polyserve
     ```
 
 ## History
